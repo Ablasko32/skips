@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --gradient-bg: linear-gradient(to bottom right, #0f172a, #581c87, #0f172a);
+  --text-white: #ffffff;
+  --text-secondary: #e9d5ff;
+  --text-color-error: #f43f5e;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+option {
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+body {
+  background: var(--gradient-bg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100dvh;
+  font-family: "Inter", sans-serif;
+}

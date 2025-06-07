@@ -1,0 +1,100 @@
+.Container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.SizeSelect {
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+  border-radius: 6px;
+  margin-bottom: 6rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--text-white);
+  width: 20rem;
+  max-width: 100%;
+  align-self: center;
+}
+
+.Loader {
+  width: 10rem;
+  height: 10rem;
+  border: 1rem solid rgba(255, 255, 255, 0.1);
+  border-top-color: #581c87;
+  animation: 1s Spin ease-in-out;
+  border-radius: 50%;
+}
+
+@keyframes Spin {
+  0% {
+    rotate: 0deg;
+  }
+  50% {
+    rotate: 180deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+
+.ErrorMessage {
+  color: var(--text-color-error);
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.SizeSelect:focus {
+  border-color: #581c87;
+  outline: none;
+}
+
+.SizeSelect option {
+  background-color: #581c87;
+  color: var(--text-white);
+  border: none;
+}
+
+.ContentArea {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  min-height: 400px;
+  align-items: flex-start;
+}
+
+.SelectedSizeNotSet {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 1.4rem;
+}
+
+.EmptyState {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 2.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1.5rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25),
+    0 0 40px rgba(139, 92, 246, 0.15), 0 0 80px rgba(59, 130, 246, 0.1);
+  backdrop-filter: blur(24px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 28rem;
+}
+
+.EmptyStateTitle {
+  color: var(--text-white);
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.SkipCardContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}

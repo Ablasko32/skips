@@ -1,0 +1,138 @@
+.Card {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(24px);
+
+  max-width: 32rem;
+  width: 100%;
+  padding: 2.2rem;
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1.5rem;
+
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) 0 0 40px rgba(139, 92, 246, 0.15),
+    0 0 80px rgba(59, 130, 246, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  position: relative;
+}
+
+.Badge {
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  rotate: 40deg;
+  background: linear-gradient(to right, #8b5cf6, #3b82f6);
+  color: var(--text-white);
+  transform: translateX(20%);
+  padding: 0.8rem 1.6rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  font-size: 1.1rem;
+  box-shadow: 0 8px 32px rgba(139, 92, 246, 0.3),
+    0 0 20px rgba(59, 130, 246, 0.2);
+  width: 10rem;
+}
+
+.PriceContainer {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16px);
+  border-radius: 1rem;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--text-white);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.2rem;
+}
+.PriceContainer::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  background: linear-gradient(45deg, #8b5cf6, #3b82f6);
+  border-radius: 1rem;
+  opacity: 0.1;
+  filter: blur(8px);
+  z-index: -1;
+}
+
+.Price {
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.Title {
+  font-size: 2.4rem;
+  color: var(--text-white);
+  font-weight: 600;
+}
+
+.HireDays {
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.ActionButton {
+  background: linear-gradient(to right, #8b5cf6, #3b82f6);
+  color: var(--text-white);
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 2px 8px rgba(139, 92, 246, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.ActionButton:hover {
+  background: linear-gradient(to right, #7c3aed, #2563eb);
+  box-shadow: 0 12px 20px -3px rgba(139, 92, 246, 0.15),
+    0 4px 15px rgba(139, 92, 246, 0.25);
+  transform: translateY(-1px);
+}
+
+.Skip {
+  width: 100%;
+  height: 12rem;
+  background: linear-gradient(to bottom right, #fbbf24, #f59e0b, #d97706);
+  border-radius: 1rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+.Skip::before,
+.Skip::after {
+  content: "";
+  position: absolute;
+  top: 2rem;
+  width: 1.5rem;
+  height: 1rem;
+  background-color: #b45309;
+  border-radius: 0.25rem;
+}
+
+.Skip::before {
+  left: 1rem;
+}
+
+.Skip::after {
+  right: 1rem;
+}
+
+.SkipContainer {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 8rem;
+  object-fit: contain;
+}
