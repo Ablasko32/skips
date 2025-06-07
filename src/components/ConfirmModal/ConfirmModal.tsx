@@ -9,7 +9,7 @@ const ConfirmModal = () => {
   const bgRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const closeOnClick = (e) => {
+    const closeOnClick = (e: MouseEvent) => {
       if (!bgRef.current) return;
       if (e.target === bgRef.current) {
         setModalOpen(false);
